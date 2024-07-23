@@ -14,16 +14,3 @@ menu.addEventListener('click', function () {
 });
 
 
-//Setting Natural Height and Width to Images
-document.addEventListener("DOMContentLoaded", () => {
-    const images = document.querySelectorAll('img');
-    images.forEach(img => {
-        const tempImg = new Image();
-        tempImg.src = img.src;
-        tempImg.onload = () => {
-            img.setAttribute('width', tempImg.naturalWidth);
-            img.setAttribute('height', tempImg.naturalHeight);
-        };
-    });
-});
-
