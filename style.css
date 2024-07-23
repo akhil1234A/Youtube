@@ -134,12 +134,8 @@ hr {
 
 @media (max-width:800px){
 
-  #sidebar{
-    width:250px;
-    position:fixed;
-    z-index: 100;
-  }
-  #sidebar .show{
+ 
+  #sidebar {
     display:none;
   }
 
