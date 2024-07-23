@@ -1,0 +1,158 @@
+:root {
+  --background-color: #fff;
+  --accent-background-color: #f1f1f1;
+  --link-color: #181818;
+  --color: #000;
+  --accent-color: #f2f2f2;
+  --border: #dbdbdb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(background-color);
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+
+
+
+.text-dark {
+  color: var(--color) !important;
+}
+
+svg path {
+  fill: var(--color);
+}
+
+input.form-control {
+  background-color: var(--accent-background-color) !important;
+  border-color: var(--border) !important;
+  color: var(--color) !important;
+  
+}
+
+input.form-control:focus {
+  box-shadow: none;
+}
+
+.input-group-text {
+  background-color: var(--accent-color) !important;
+  border-color: var(--border) !important;
+}
+
+
+hr {
+  background-color: var(--border) !important;
+}
+
+
+/* Navigation */
+.navigation-bar {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  background-color: #fff
+  
+}
+
+
+
+/* <!- page content card --> */
+.card-video h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color:  var(--color);
+}
+
+.card-video div {
+  color: var(--link-color);
+  font-size: 13px;
+}
+
+
+.card-video-details img {
+      border-radius: 50%;
+      max-width:30px;
+  }
+
+
+  /* body */
+
+  #body{
+    position:relative;
+    top: 60px;
+    
+  }
+
+  /* sidebar */
+  #sidebar {
+    /* width: 250px; */
+    /*position: fixed; */
+    height: 100%;
+    /* left: 0;
+    top: 50px; */
+    background-color: var(--background-color);
+    overflow-y: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    .nav-link span {
+        padding: 0 15px;
+        vertical-align: bottom;
+        white-space: nowrap;
+        font-size: 15px;
+    }
+
+    .nav-footer {
+        padding-right: 30px;
+        padding-left: 1rem;
+        .nav-link {
+            padding: 0;
+            padding-right: 5px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+
+    svg{
+      width: 25px;
+  
+    }
+}
+
+
+@media (max-width:800px){
+
+  #sidebar{
+    width:250px;
+    position:fixed;
+    z-index: 100;
+  }
+  #sidebar .show{
+    display:none;
+  }
+
+  
+}
+
+@media (max-width:400px){
+
+  #video, #bell{
+    display: none;
+  }
+
+
+
+  
+}
