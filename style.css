@@ -80,6 +80,9 @@ hr {
   font-size: 13px;
 }
 
+.card-video img{
+  max-width: 632px;
+}
 
 .card-video-details img {
       border-radius: 50%;
@@ -98,7 +101,7 @@ hr {
   /* sidebar */
   #sidebar {
     /* width: 250px; */
-    /*position: fixed; */
+    position: static; 
     height: 100%;
     /* left: 0;
     top: 50px; */
@@ -107,39 +110,42 @@ hr {
     padding-top: 20px;
     padding-bottom: 40px;
 
-    .nav-link span {
-        padding: 0 15px;
-        vertical-align: bottom;
-        white-space: nowrap;
-        font-size: 15px;
-    }
-
-    .nav-footer {
-        padding-right: 30px;
-        padding-left: 1rem;
-        .nav-link {
-            padding: 0;
-            padding-right: 5px;
-            font-size: 12px;
-            font-weight: bold;
-        }
-    }
-
-    svg{
-      width: 25px;
-  
-    }
+    
+    
 }
+
+.nav-link span {
+  padding: 0 15px;
+  vertical-align: bottom;
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.nav-footer {
+  padding-right: 30px;
+  padding-left: 1rem;
+ 
+}
+
+.nav-footer.nav-link {
+  padding: 0;
+  padding-right: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+svg{
+width: 25px;
+
+}
+
+
 
 
 @media (max-width:800px){
 
   #sidebar{
-    width:250px;
-    position:fixed;
-    z-index: 100;
-  }
-  #sidebar .show{
     display:none;
   }
 
