@@ -81,12 +81,17 @@ hr {
 }
 
 .card-video img{
-  max-width: 632px;
+  /* max-width: 632px; */
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Adjust according to your image's aspect ratio */
+  object-fit: cover;
 }
 
 .card-video-details img {
       border-radius: 50%;
-      max-width:30px;
+      width:30px;
+      height:30px;
+      object-fit: cover;
   }
 
 
